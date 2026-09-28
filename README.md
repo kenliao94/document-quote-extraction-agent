@@ -69,6 +69,20 @@ uv run python main.py
 
 ### 2. Run with a live LLM
 
+#### Local with Ollama (Free, Offline)
+Ensure Ollama is running (`ollama serve`), then run:
+
+```bash
+# Using your local Ollama model (e.g. llama3.1:8b or gemma4:latest):
+export MODEL="ollama:llama3.1:8b"
+uv run python main.py
+
+# Or configure via a .env file (see .env.example):
+# MODEL="ollama:llama3.1:8b"
+# OLLAMA_BASE_URL="http://localhost:11434/v1"
+```
+
+#### Cloud LLMs (OpenAI, Gemini, Anthropic)
 Set your API key for OpenAI, Gemini, or Anthropic:
 
 ```bash
