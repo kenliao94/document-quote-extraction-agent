@@ -97,7 +97,7 @@ class DocumentQuoteOutput(BaseModel):
 
 
 # =====================================================================
-# Service Layer (Analogous to DatabaseConn in the reference)
+# Service Layer
 # =====================================================================
 
 @dataclass
